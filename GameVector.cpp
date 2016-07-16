@@ -29,12 +29,16 @@ GameVector GameVector::resta(const GameVector& obj1, const GameVector& obj2){
 	return GameVector(obj1.x - obj2.x, obj1.y - obj2.y);
 }
 
-void GameVector::mulEscalar(const GameVector& obj, double escalar){
+void GameVector::mulEscalar(GameVector& obj, double escalar){
 
+	obj.x *= escalar;
+	obj.y *= escalar;
 }
 
-void GameVector::divEscalar(const GameVector& obj, double escalar){
-	
+void GameVector::divEscalar(GameVector& obj, double escalar){
+
+	obj.x /= escalar;
+	obj.y /= escalar;	
 }
 
 void GameVector::productoPunto(const GameVector& obj1, const GameVector& obj2){

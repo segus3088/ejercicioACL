@@ -8,6 +8,7 @@ class GameSprite
 {
 private:
 	GameVector position;
+	SDL_Surface *sprite;
 
 public:
 	GameSprite();

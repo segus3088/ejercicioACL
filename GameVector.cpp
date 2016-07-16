@@ -41,7 +41,8 @@ void GameVector::divEscalar(GameVector& obj, double escalar){
 	obj.y /= escalar;	
 }
 
-void GameVector::productoPunto(const GameVector& obj1, const GameVector& obj2){
+double GameVector::productoPunto(const GameVector& obj1, const GameVector& obj2){
 
+	return ((obj1.x * obj2.y) + (obj1.x * obj2.y));
 }
 

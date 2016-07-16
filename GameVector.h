@@ -17,7 +17,7 @@ public:
 	GameVector resta(const GameVector& obj1, const GameVector& obj2);
 	void mulEscalar(GameVector& obj, double escalar);//multiplicación de un vector por un escalar
 	void divEscalar(GameVector& obj, double escalar);//Divición de un vector por un escalar
-	void productoPunto(const GameVector& obj1, const GameVector& obj2);
+	double productoPunto(const GameVector& obj1, const GameVector& obj2);
 
 
 private:
